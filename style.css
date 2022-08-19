@@ -13,6 +13,7 @@
   background-color: #f2f4f8;
   max-width: 375px;
   margin: auto;
+  max-height: 5410px;
 }
 
 body {
@@ -29,7 +30,6 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  max-width: 356px;
   padding-top: 30px;
   padding-bottom: 10%;
   padding-left: 25px;
@@ -473,13 +473,11 @@ button:hover {
 .hidden3 button:hover {
   background-color: #6070ff;
   color: white;
-  border-radius: 100px;
 }
 
 .hidden33 button:hover {
   background-color: #6070ff;
   color: white;
-  border-radius: 100px;
 }
 
 .hidden4 button:hover {
@@ -519,17 +517,17 @@ button:hover {
 
 .abt {
   position: relative;
+  display: flex;
 }
 
 .about {
-  position: absolute;
-  display: flex;
+  position: relative;
   flex-direction: column;
   border: 1px solid rgb(250, 253, 255);
-  padding-top: 6em;
-  padding-left: 37px;
+  padding-top: 2em;
+  padding-left: 25px;
   padding-right: 2px;
-  width: 335px;
+  width: 100em;
   left: -0.1px;
   top: -52px;
   border-top-right-radius: 50px;
@@ -554,7 +552,7 @@ button:hover {
   color: #172b4d;
   font-weight: bold;
   padding-bottom: 1px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-top: 1px;
   margin-top: 1px;
 }
