@@ -11,7 +11,7 @@ body {
   display: grid;
   grid-template-columns: auto;
   align-content: flex-start;
-  align-items: center;
+  align-content: center;
 }
 
 .main-page {
@@ -180,9 +180,27 @@ form > button {
   cursor: pointer;
 }
 
+.top > button {
+  padding: 12px;
+  margin-top: 0%;
+  display: flex;
+  align-items: center;
+}
+
 form > button:hover {
   filter: brightness(1);
-  background-color: rgb(230, 42, 183);
+  background-color: #6070ff;
+  color: #fff;
+}
+
+form > button:disabled {
+  border: 1px solid #c1c7d0;
+  background-color: #fff;
+  color: #5e6c84;
+}
+
+form > button:active {
+  background: #2230d2;
   color: #fff;
 }
 
@@ -351,7 +369,18 @@ form > button:hover {
 }
 
 .card-check:hover {
-  background-color: #396df2;
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.card-check:disabled {
+  border: 1px solid #c1c7d0;
+  background-color: #fff;
+  color: #5e6c84;
+}
+
+.card-check:active {
+  background: #2230d2;
   color: #fff;
 }
 
