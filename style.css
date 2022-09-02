@@ -1,0 +1,120 @@
+.container {
+  position: relative;
+  margin: auto;
+  height: 650px;
+  background-color: white;
+  margin-bottom: 100px;
+  border: 1px solid white;
+  border-bottom-left-radius: 7em;
+  max-width: 400px;
+}
+
+.main {
+  background-color: #f2f4f8;
+  max-width: 400px;
+  margin: auto;
+}
+
+body {
+  background-color: #e5e5e5;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 356px;
+  padding-top: 30px;
+  padding-bottom: 10%;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: white;
+}
+
+#dropdown {
+  width: 35px;
+  height: 25px;
+}
+
+.logo > a {
+  color: blue;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: larger;
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(250, 253, 255);
+  background-image: url(images/header-shapes-bg.svg);
+  background-size: 380px 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 1.5em;
+}
+
+h1 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: 45px;
+  text-align: left;
+  padding-right: 3em;
+  padding-top: 1.6em;
+  padding-bottom: 1px;
+  padding-left: 25px;
+  margin-bottom: 20px;
+  margin-top: 2px;
+  color: #172b4d;
+}
+
+p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 1px;
+  margin-top: 1px;
+  color: #344563;
+}
+
+#connection {
+  padding-left: 25px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #7f8cff;
+}
+
+#social-network {
+  padding-left: 2px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #7f8cff;
+}
+
+.details-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-top: 10px;
+  max-width: 45%;
+  position: relative;
+  left: -40px;
+}
+
+.social-network {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-top: 10px;
+  max-width: 45%;
+  position: relative;
+  left: -10px;
+}
