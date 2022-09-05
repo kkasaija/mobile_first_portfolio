@@ -39,7 +39,8 @@ build the first 2 sections of the mobile website using the template you chose in
 - Twitter: [@twitterhandle](https://twitter.com/@kenn_ug)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/kenneth-k-310722234)
 
-### Link to online
+
+### Link to online version
 - https://kasaija-kenneth.github.io/
 
 
