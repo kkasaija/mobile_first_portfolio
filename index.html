@@ -361,7 +361,9 @@
             </div>
             <form action="https://formspree.io/f/mgedkqkj" method="post" autocomplete="off">
               <div class="data1">
+                <label for="fullname" hidden>Fullname</label>
                 <input
+                  id="fullname"
                   name="Name"
                   type="text"
                   placeholder="your Full name"
@@ -369,6 +371,7 @@
                   maxlength="30"
                 />
                 <br />
+                <label for="email" hidden>Email</label>
                 <input
                   name="email"
                   type="email"
@@ -377,7 +380,9 @@
                   required
                 />
                 <br/>
+                <label for="message" hidden>Message</label>
                 <textarea
+                  id="message"
                   name="Message"
                   class="textarea"
                   cols="30"
