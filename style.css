@@ -63,11 +63,22 @@ header {
   margin: 00.0001px;
 }
 
+.frame-skill a {
+  text-decoration: none;
+}
+
 .logo > a:hover {
   animation: z-axis-animation 0.5s ease-in-out 0.5s infinite alternate-reverse;
 }
+
 @keyframes z-axis-animation {
-  from {transform: translateZ(2em);} to {transform: translateZ(-2em);}
+  from {
+    transform: translateZ(2em);
+  }
+
+  to {
+    transform: translateZ(-2em);
+  }
 }
 
 .headline {
@@ -148,6 +159,10 @@ p {
   max-width: 200px;
   position: relative;
   left: -10px;
+}
+
+.hidden33 img {
+  display: none;
 }
 
 .social-media-links > li > a > img:hover {
@@ -452,10 +467,6 @@ button:hover {
   cursor: pointer;
 }
 
-.hidden33 img {
-  display: none;
-}
-
 .hidden4 button {
   width: 133px;
   height: 40px;
@@ -688,10 +699,6 @@ button:hover {
   position: absolute;
   left: 75%;
   top: 79.4%;
-}
-
-.frame-skill a {
-  text-decoration: none;
 }
 
 #profiler1 {
@@ -1069,15 +1076,11 @@ footer {
   }
 
   .logo {
-  display: flex;
-  text-align: center;
-  width: 150px;
-  margin-left: 4.5%;
-}
-
-  /* .logo > a {
-    margin-left: 2%;
-  } */
+    display: flex;
+    text-align: center;
+    width: 150px;
+    margin-left: 4.5%;
+  }
 
   .languages > ul {
     display: flex;
