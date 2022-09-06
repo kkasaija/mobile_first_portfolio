@@ -40,6 +40,10 @@ build the first 2 sections of the mobile website using the template you chose in
 - LinkedIn: [LinkedIn](https://linkedin.com/in/kenneth-k-310722234)
 
 
+### Link to online version
+- https://kasaija-kenneth.github.io/
+
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

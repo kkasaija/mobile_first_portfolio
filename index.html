@@ -15,7 +15,7 @@
         <header>
           <div class="logo"><a href="index.html">My Logo</a></div>
           <nav>
-            <a href=""><img id="menu-icon" src="images/menu1.png" alt="menu"/></a>
+            <a href=""><img id="menu-icon" src="images/menu-icon.svg" alt="menu"/></a>
             <ul id="menu-list">
               <li><a href="">Portfolio </a></li>
               <li><a href="">About </a></li>
@@ -361,7 +361,9 @@
             </div>
             <form action="https://formspree.io/f/mgedkqkj" method="post" autocomplete="off">
               <div class="data1">
+                <label for="fullname" hidden>Fullname</label>
                 <input
+                  id="fullname"
                   name="Name"
                   type="text"
                   placeholder="your Full name"
@@ -369,6 +371,7 @@
                   maxlength="30"
                 />
                 <br />
+                <label for="email" hidden>Email</label>
                 <input
                   name="email"
                   type="email"
@@ -377,7 +380,9 @@
                   required
                 />
                 <br/>
+                <label for="message" hidden>Message</label>
                 <textarea
+                  id="message"
                   name="Message"
                   class="textarea"
                   cols="30"
