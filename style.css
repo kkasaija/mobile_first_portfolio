@@ -623,11 +623,32 @@ button:hover {
   margin-top: 1px;
 }
 
-.languages > ul {
+.languages > li {
   display: flex;
   flex-direction: column;
-  padding-left: 0%;
   margin-left: 0%;
+  margin-top: 10px;
+}
+
+.languages {
+  padding-left: 0;
+  margin-left: 28px;
+  margin-bottom: 0;
+}
+
+.languages > li > a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  background-color: #f7f7f9;
+  height: 67px;
+  padding-left: 16px;
+  border-radius: 8px;
+}
+
+.languages > li >a > p {
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
 .languages1 {
@@ -1101,20 +1122,20 @@ footer {
 
   #language {
     position: absolute;
-    left: 75%;
-    top: 11px;
+    left: 76%;
+    top: 7%;
   }
 
   #fram {
     position: absolute;
     left: 75%;
-    top: 56%;
+    top: 59%;
   }
 
   #skill {
     position: absolute;
     left: 75%;
-    top: 80%;
+    top: 81%;
   }
 
   .languages {
