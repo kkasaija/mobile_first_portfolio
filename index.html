@@ -12,14 +12,26 @@
   <body>
     <div class="global-wrapper">
       <div class="main-wrapper">
+        <div class="mobile-nav">
+          <a class="close-icon">
+            <img onclick="closeMenu()" id="close-icon" src="images/close-icon.svg" alt="close-icon">
+          </a>
+          <ul id="mobile-nav-list">
+            <li><a onclick="closeMenu()" href="#work">Portfolio</a></li>
+            <li><a onclick="closeMenu()" href="#about">About</a></li>
+            <li><a onclick="closeMenu()" href="#contact">Contact</a></li>
+          </ul>
+        </div>
         <header>
           <div class="logo"><a href="index.html">My Logo</a></div>
           <nav>
-            <a href=""><img id="menu-icon" src="images/menu-icon.svg" alt="menu"/></a>
+            <a>
+              <img onclick="openMenu()" id="menu-icon" src="images/menu-icon.svg" alt="menu"/>
+            </a>
             <ul id="menu-list">
-              <li><a href="">Portfolio </a></li>
-              <li><a href="">About </a></li>
-              <li><a href="">Contact </a></li>
+              <li><a href="">Portfolio</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
             </ul>
           </nav>
         </header>
@@ -41,7 +53,7 @@
           </ul>
         </div>
       </div>
-      <section class="works">
+      <section class="works" id="work">
         <div class="tonic">
           <div class="imagez"><img src="images/Snapshoot-Portfolio-1.svg" alt="snap1" /></div>
           <h2>Tonic</h2>
@@ -282,7 +294,7 @@
           </div>
         </div>
       </section>
-      <section class="abt">
+      <section class="abt" id="about">
         <div class="about">
           <div class="content-left">
             <div>
@@ -378,7 +390,7 @@
         </div>
       </section>
       <footer>
-          <div class="contact-form">
+          <div class="contact-form" id="contact">
             <h2>Contact Me</h2>
             <div class="parag">
               <p>
@@ -424,5 +436,6 @@
           </div>
         </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

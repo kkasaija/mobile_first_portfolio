@@ -36,11 +36,61 @@ header {
   padding-left: 25px;
   padding-right: 25px;
   background-color: white;
+  align-items: center;
+}
+
+.mobile-nav {
+  position: absolute;
+  height: 100%;
+  min-width: 100%;
+  top: 0;
+  visibility: hidden;
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 1;
+  margin: auto;
+  transition: all 400ms ease;
+  backdrop-filter: blur(4.5px);
+}
+
+
+.mobile-nav .close-icon {
+  position: fixed;
+  top: 4.7%;
+  right: 6%;
+  opacity: 1;
+  width: 30px;
+  height: 30px;
+  transition: all 40ms ease;
+  fill: #fff;
+  z-index: 80;
+  cursor: pointer;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-nav ul li {
+  margin: 30px 0;
+  text-align: center;
+
+}
+
+.mobile-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
 }
 
 #menu-icon {
   width: 35px;
   height: 25px;
+  cursor: pointer;
 }
 
 #menu-list {
@@ -53,7 +103,7 @@ header {
   font-weight: bolder;
   font-size: larger;
   text-decoration: none;
-  transition: all 0.5s ease-out;
+  /* transition: all 0.5s ease-out; */
 }
 
 .headline {
@@ -581,6 +631,41 @@ button:hover {
   width: 55%;
 }
 
+#menu-list2 {
+  height: 100vh;
+  top: -15px;
+  position: fixed;
+  right: 20px;
+  left: 0;
+  z-index: 3;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  transition: top 1s ease;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: none;
+  background: #6070ffe6;
+  backdrop-filter: blur(4px);
+}
+
+#menu-list2 li {
+  padding: 5px;
+  padding-left: 2px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+  text-decoration: none;
+  list-style: none;
+  position: relative;
+  top: -150px;
+}
+
+#menu-list2 li a {
+  text-decoration: none;
+  color: white;
+}
+
 .abt {
   display: flex;
   align-items: center;
@@ -721,10 +806,6 @@ button:hover {
   align-items: center;
   padding-left: 3px;
   color: #000;
-}
-
-.logo > a:hover {
-  background-color: green;
 }
 
 #profiler a {
@@ -900,6 +981,7 @@ footer {
 
   #menu-icon {
     display: none;
+    cursor: pointer;
   }
 
   header {
