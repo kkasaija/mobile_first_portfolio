@@ -36,11 +36,70 @@ header {
   padding-left: 25px;
   padding-right: 25px;
   background-color: white;
+  align-items: center;
+}
+
+.mobile-nav {
+  position: absolute;
+  height: 100%;
+  min-width: 100%;
+  top: 0;
+  visibility: hidden;
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 1;
+  margin: auto;
+  transition: all 400ms ease;
+  backdrop-filter: blur(4.5px);
+}
+
+.mobile-nav .close-icon {
+  position: fixed;
+  top: 4.7%;
+  right: 6%;
+  opacity: 1;
+  width: 30px;
+  height: 30px;
+  transition: all 40ms ease;
+  fill: #fff;
+  z-index: 80;
+  cursor: pointer;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.languages > li {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0%;
+  margin-top: 10px;
+}
+
+.languages li {
+  list-style: none;
+  position: relative;
+  left: -35px;
+}
+
+.frame-skill li {
+  list-style: none;
+}
+
+.mobile-nav ul li {
+  margin: 30px 0;
+  text-align: center;
 }
 
 #menu-icon {
   width: 35px;
   height: 25px;
+  cursor: pointer;
 }
 
 #menu-list {
@@ -53,7 +112,28 @@ header {
   font-weight: bolder;
   font-size: larger;
   text-decoration: none;
-  transition: all 0.5s ease-out;
+
+  /* transition: all 0.5s ease-out; */
+}
+
+.frame-skill a {
+  text-decoration: none;
+}
+
+.languages > li > a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  background-color: #f7f7f9;
+  height: 67px;
+  padding-left: 16px;
+  border-radius: 8px;
+}
+
+.mobile-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
 }
 
 .headline {
@@ -581,6 +661,60 @@ button:hover {
   width: 55%;
 }
 
+#menu-list2 {
+  height: 100vh;
+  top: -15px;
+  position: fixed;
+  right: 20px;
+  left: 0;
+  z-index: 3;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  transition: top 1s ease;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: none;
+  background: #6070ffe6;
+  backdrop-filter: blur(4px);
+}
+
+.languages1 ul li {
+  list-style: none;
+  position: relative;
+  left: -35px;
+}
+
+#menu-list2 li {
+  padding: 5px;
+  padding-left: 2px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+  text-decoration: none;
+  list-style: none;
+  position: relative;
+  top: -150px;
+}
+
+#profiler a {
+  text-decoration: none;
+  color: black;
+}
+
+#profiler2 a {
+  color: black;
+}
+
+#profiler1 a {
+  color: black;
+}
+
+#menu-list2 li a {
+  text-decoration: none;
+  color: white;
+}
+
 .abt {
   display: flex;
   align-items: center;
@@ -623,31 +757,29 @@ button:hover {
   margin-top: 1px;
 }
 
-.languages > ul {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0%;
-  margin-left: 0%;
+.languages {
+  padding-left: 0;
+  margin-left: 28px;
+  margin-bottom: 0;
+}
+
+.parag p {
+  color: #ebebff;
+  margin-bottom: 87px;
+  margin-top: 12px;
+  padding: 4px;
+  font-size: 16px;
+  text-align: center;
+  max-width: inherit;
+}
+
+.languages > li > a > p {
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
 .languages1 {
   display: none;
-}
-
-.languages li {
-  list-style: none;
-  position: relative;
-  left: -35px;
-}
-
-.frame-skill li {
-  list-style: none;
-}
-
-.languages1 ul li {
-  list-style: none;
-  position: relative;
-  left: -35px;
 }
 
 #language {
@@ -665,10 +797,6 @@ button:hover {
   position: absolute;
   left: 75%;
   top: 79.4%;
-}
-
-.frame-skill a {
-  text-decoration: none;
 }
 
 #profiler1 {
@@ -702,15 +830,6 @@ button:hover {
   color: #000;
 }
 
-.logo > a:hover {
-  background-color: green;
-}
-
-#profiler a {
-  text-decoration: none;
-  color: black;
-}
-
 #profiler2 {
   position: relative;
   font-size: larger;
@@ -719,14 +838,6 @@ button:hover {
   padding-top: 22px;
   left: -35px;
   border-bottom: 1px solid #e2dfdf;
-}
-
-#profiler2 a {
-  color: black;
-}
-
-#profiler1 a {
-  color: black;
 }
 
 .contact-form {
@@ -778,16 +889,6 @@ form > .data1 {
   width: inherit;
   justify-content: center;
   display: flex;
-}
-
-.parag p {
-  color: #ebebff;
-  margin-bottom: 87px;
-  margin-top: 12px;
-  padding: 4px;
-  font-size: 16px;
-  text-align: center;
-  max-width: inherit;
 }
 
 .data1 input {
@@ -879,6 +980,7 @@ footer {
 
   #menu-icon {
     display: none;
+    cursor: pointer;
   }
 
   header {
@@ -1101,20 +1203,20 @@ footer {
 
   #language {
     position: absolute;
-    left: 75%;
-    top: 11px;
+    left: 76%;
+    top: 7%;
   }
 
   #fram {
     position: absolute;
     left: 75%;
-    top: 56%;
+    top: 59%;
   }
 
   #skill {
     position: absolute;
     left: 75%;
-    top: 80%;
+    top: 81%;
   }
 
   .languages {
