@@ -56,7 +56,6 @@ header {
   backdrop-filter: blur(4.5px);
 }
 
-
 .mobile-nav .close-icon {
   position: fixed;
   top: 4.7%;
@@ -75,16 +74,26 @@ header {
   padding: 0;
 }
 
+.languages > li {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0%;
+  margin-top: 10px;
+}
+
+.languages li {
+  list-style: none;
+  position: relative;
+  left: -35px;
+}
+
+.frame-skill li {
+  list-style: none;
+}
+
 .mobile-nav ul li {
   margin: 30px 0;
   text-align: center;
-
-}
-
-.mobile-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 24px;
 }
 
 #menu-icon {
@@ -103,7 +112,28 @@ header {
   font-weight: bolder;
   font-size: larger;
   text-decoration: none;
+
   /* transition: all 0.5s ease-out; */
+}
+
+.frame-skill a {
+  text-decoration: none;
+}
+
+.languages > li > a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  background-color: #f7f7f9;
+  height: 67px;
+  padding-left: 16px;
+  border-radius: 8px;
+}
+
+.mobile-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
 }
 
 .headline {
@@ -649,6 +679,12 @@ button:hover {
   backdrop-filter: blur(4px);
 }
 
+.languages1 ul li {
+  list-style: none;
+  position: relative;
+  left: -35px;
+}
+
 #menu-list2 li {
   padding: 5px;
   padding-left: 2px;
@@ -659,6 +695,19 @@ button:hover {
   list-style: none;
   position: relative;
   top: -150px;
+}
+
+#profiler a {
+  text-decoration: none;
+  color: black;
+}
+
+#profiler2 a {
+  color: black;
+}
+
+#profiler1 a {
+  color: black;
 }
 
 #menu-list2 li a {
@@ -708,52 +757,29 @@ button:hover {
   margin-top: 1px;
 }
 
-.languages > li {
-  display: flex;
-  flex-direction: column;
-  margin-left: 0%;
-  margin-top: 10px;
-}
-
 .languages {
   padding-left: 0;
   margin-left: 28px;
   margin-bottom: 0;
 }
 
-.languages > li > a {
-  display: flex;
-  text-decoration: none;
-  align-items: center;
-  background-color: #f7f7f9;
-  height: 67px;
-  padding-left: 16px;
-  border-radius: 8px;
+.parag p {
+  color: #ebebff;
+  margin-bottom: 87px;
+  margin-top: 12px;
+  padding: 4px;
+  font-size: 16px;
+  text-align: center;
+  max-width: inherit;
 }
 
-.languages > li >a > p {
+.languages > li > a > p {
   margin-top: 10px;
   margin-left: 20px;
 }
 
 .languages1 {
   display: none;
-}
-
-.languages li {
-  list-style: none;
-  position: relative;
-  left: -35px;
-}
-
-.frame-skill li {
-  list-style: none;
-}
-
-.languages1 ul li {
-  list-style: none;
-  position: relative;
-  left: -35px;
 }
 
 #language {
@@ -771,10 +797,6 @@ button:hover {
   position: absolute;
   left: 75%;
   top: 79.4%;
-}
-
-.frame-skill a {
-  text-decoration: none;
 }
 
 #profiler1 {
@@ -808,11 +830,6 @@ button:hover {
   color: #000;
 }
 
-#profiler a {
-  text-decoration: none;
-  color: black;
-}
-
 #profiler2 {
   position: relative;
   font-size: larger;
@@ -821,14 +838,6 @@ button:hover {
   padding-top: 22px;
   left: -35px;
   border-bottom: 1px solid #e2dfdf;
-}
-
-#profiler2 a {
-  color: black;
-}
-
-#profiler1 a {
-  color: black;
 }
 
 .contact-form {
@@ -880,16 +889,6 @@ form > .data1 {
   width: inherit;
   justify-content: center;
   display: flex;
-}
-
-.parag p {
-  color: #ebebff;
-  margin-bottom: 87px;
-  margin-top: 12px;
-  padding: 4px;
-  font-size: 16px;
-  text-align: center;
-  max-width: inherit;
 }
 
 .data1 input {
