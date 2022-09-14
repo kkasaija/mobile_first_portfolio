@@ -4,25 +4,25 @@ const codeButton = 'https://github.com/Kasaija-Kenneth/mobile_first_portfolio';
 const portfolio = [
   {
     name: 'Tonic',
-    image: 'images/pop.png',
+    image: 'images/desk4.svg',
     name2: 'Tonic',
-    image2: 'images/snap.png',
+    image2: 'images/desk3.svg',
     description: 'Lorem Ipsum is simply dummy text of the printing and',
     technologies: ['html', 'css', 'javascript', 'bootstrap', 'ruby', 'github'],
   },
   {
     name: 'Multi-Post Stories',
-    image: 'images/multip.png',
+    image: 'images/desk2.svg',
     name2: 'Multi-Post Stories',
-    image2: 'images/story.png',
+    image2: 'images/desk1.svg',
     description: 'Lorem Ipsum is simply dummy text of the printing and',
     technologies: ['html', 'css', 'javascript', 'bootstrap', 'ruby', 'github'],
   },
   {
     name: 'Facebook 360',
     name2: 'Tonic',
-    image: 'images/facebpp.png',
-    image2: 'images/snap1.png',
+    image: 'images/Snapshoot-Portfolio-4.svg',
+    image2: 'images/Snapshoot-Portfolio-1.svg',
     description: 'Lorem Ipsum is simply dummy text of the printing and',
     technologies: ['html', 'css', 'javascript', 'bootstrap', 'ruby', 'github'],
   },
@@ -30,8 +30,8 @@ const portfolio = [
   {
     name: 'Uber Navigation',
     name2: 'Multi-Post Stories',
-    image2: 'images/snap3.png',
-    image: 'images/uberp.png',
+    image2: 'images/Snapshoot-Portfolio-2.svg',
+    image: 'images/Snapshoot-Portfolio-3.svg',
     description: 'some text some text some text some text',
     technologies: ['html', 'css', 'javascript', 'bootstrap', 'ruby', 'github'],
   },
@@ -42,8 +42,8 @@ const projectCards = [
     card: 1,
     name: 'Tonic',
     name2: 'Tonic',
-    image: 'images/snap.png',
-    image2: 'images/tonic1.png',
+    image: 'images/Snapshoot-Portfolio-1.svg',
+    image2: 'images/Snapshoot-Portfolio-3.svg',
     description: 'some text some text some text some text',
     technologies: ['html', 'css', 'javascript'],
     specifics: ['CANOPY', 'Back End Dev', '2015'],
@@ -53,8 +53,8 @@ const projectCards = [
     card: 2,
     name: 'Multi-Post Stories',
     name2: 'Multi-Post Stories',
-    image: 'images/story.png',
-    image2: 'images/multi2.png',
+    image: 'images/Snapshoot-Portfolio-3.svg',
+    image2: 'images/Snapshoot-Portfolio-4.svg',
     description: 'feature that all course of a day without spamming theirfriends',
     technologies: ['html', 'css', 'javascript'],
     specifics: ['CANOPY', 'Back End Dev', '2015'],
@@ -64,8 +64,8 @@ const projectCards = [
     card: 3,
     name: 'Tonic',
     name2: 'Facebook 360',
-    image: 'images/snap1.png',
-    image2: 'images/portcard.png',
+    image: 'images/desk1.svg',
+    image2: 'images/desk2.svg',
     description: ` Exploring the future of media in Facebook's first Virtual RealityVR.`,
     technologies: ['html', 'css', 'javascript'],
     specifics: ['CANOPY', 'Back End Dev', '2015'],
@@ -75,8 +75,8 @@ const projectCards = [
     card: 4,
     name: 'Multi-Post Stories',
     name2: 'Uber Navigation',
-    image: 'images/snap3.png',
-    image2: 'images/uber2.png',
+    image: 'images/desk4.svg',
+    image2: 'images/desk3.svg',
     description: `  A smart assistant to make driving more safe, efficient, and fun by your car.`,
     technologies: ['html', 'css', 'javascript'],
     specifics: ['CANOPY', 'Back End Dev', '2015'],
@@ -97,16 +97,16 @@ portfolioSection.innerHTML = projectCards.map((project, index) => `
       <h2 class="desktopheadline">${project.name2}</h2>
       <div id="profs" >
         <h3 id="cannopy">${project.specifics[0]}</h3>
-        <img id="bullet" src="images/bullet.png" alt=""/>
+        <img id="bullet" src="images/desk1.svg" alt=""/>
         <h3 class="profList">${project.specifics[1]}</h3>
-        <img  id="bullet2"src="images/bullet.png" alt=""/>
+        <img  id="bullet2"src="images/desk2.svg" alt=""/>
         <h3 class="profList">${project.specifics[2]}</h3>
       </div>
       <div id="prof2">
         <h3  id="cannopy">${project.specifics2[0]}</h3>
-        <img src="images/bullet.png" alt="Counter icon"/>
+        <img src="images/desk3.svg" alt="Counter icon"/>
         <h3 class="">${project.specifics2[1]}</h3>
-        <img src="images/bullet.png" alt="Counter icon"/>
+        <img src="images/desk4.svg" alt="Counter icon"/>
         <h3 class="">${project.specifics2[2]}</h3>
       </div>
       <div class="">
