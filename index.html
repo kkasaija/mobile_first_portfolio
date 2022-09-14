@@ -3,21 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Responsive</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
     <div class="global-wrapper">
       <div class="main-wrapper">
         <div class="mobile-nav">
           <a class="close-icon">
-            <img id="close-icon" src="images/close-icon.png" alt="close-icon" />
+            <img id="close-icon" src="images/close-icon.svg" alt="close-icon">
           </a>
           <ul id="mobile-nav-list">
             <li><a href="#work" class="mobile-nav-item">Portfolio</a></li>
@@ -48,30 +47,55 @@
           </p>
           <a id="connect" href="index.html">LET'S CONNECT</a>
           <ul class="social-media-links">
-            <li>
-              <a href=""> <img src="images/Twitter.svg" alt="Twitter" /></a>
-            </li>
-            <li>
-              <a href=""> <img src="images/LinkedIn.svg" alt="LinkedIn" /></a>
-            </li>
-            <li>
-              <a href=""> <img src="images/Medium.svg" alt="Media" /></a>
-            </li>
-            <li>
-              <a href=""> <img src="images/Github.svg" alt="Github" /></a>
-            </li>
-            <li>
-              <a href=""> <img src="images/Angellist.svg" alt="Angellist" /></a>
-            </li>
+            <li><a href=""> <img src="images/Twitter.svg" alt="Twitter" /></a></li>
+            <li><a href=""> <img src="images/LinkedIn.svg" alt="LinkedIn" /></a></li>
+            <li><a href=""> <img src="images/Medium.svg" alt="Media" /></a></li>
+            <li><a href=""> <img src="images/Github.svg" alt="Github" /></a></li>
+            <li><a href=""> <img src="images/Angellist.svg" alt="Angellist" /></a></li>
           </ul>
         </div>
       </div>
-      <section class="works" id="works">
-
-        <!-----Popup on Mobile--------->
+      <section id="works">
         <div id="portfolio" class="works"></div>
-        <section id="mobileWrap" class="modal">
-          <div class="mobileDetail">
+
+        <!-- desktop popup starts from Here -->
+
+        <div id="sectionWrap" class="modal">
+          <section class="desktop">
+            <div class="desktopIntro">
+              <h2 class="deskHeading"></h2>
+              <ul class="deskButtons">
+                <li class="deskList1"></li>
+                <li class="deskList2"></li>
+                <li class="deskList3"></li>
+              </ul>
+              <div class="closeProj"><i class="fa fa-times" onclick="closeall()"></i></div>
+            </div>
+            <div><img src="images/desk1.svg" class="deskImag" alt="project-image"></div>
+            <div class="desktopFlex">
+              <p class="deskpara"></p>
+              <aside>
+                <ul class="deskButtonlist">
+                </ul>
+                <div class="liner"></div>
+                <div class="separater">
+                  <div class="seeLive">
+                    <a href="" id="liveLink"> see Live <img src="images/live.png" alt="github pages"> </a>
+                  </div>
+                  <div class="seeSource">
+                    <a href="" id="sourceLink"> See Source <img src="images/Github.svg" alt="github"> </a>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </section>
+        </div>
+        <!-----desktop popup ends here---------->
+
+        <!-- mobile popup starts from here -->
+
+        <div id="mobileWrap" class="modal">
+          <section class="mobileDetail">
             <div class="mobileIntro">
               <h2 class="mobileHeading"></h2>
               <ul class="mobileButtons">
@@ -85,55 +109,58 @@
             <div class="mobileFlex">
               <p class="mobilepara"></p>
               <aside>
-                <ul class="mobButtonlist"></ul>
+                <ul class="mobButtonlist">
+                </ul>
                 <div class="linerMobile"></div>
                 <div class="separaterMob">
                   <div class="seeLiveMob">
-                    <a href="" id="liveLinkM"> see Live <img src="images/live.png" alt="github pages"></a>
+                    <a href="" id="liveLinkM"> see Live <img src="images/live.png" alt="github pages"> </a>
                   </div>
                   <div class="seeSource">
-                    <a href="" id="sourceLinkM"> See Source <img src="images/vect1.png" alt="github"></a>
+                    <a href="" id="sourceLinkM"> See Source <img src="images/vect1.png" alt="github"> </a>
                   </div>
                 </div>
               </aside>
             </div>
-          </div>
-        </section>
-
-          <!-- desktop popup -->
-
-        <section id="sectionWrap" class="modal">
-          <div class="desktop">
-            <div class="desktopIntro">
-              <h2 class="deskHeading"></h2>
-                <ul class="deskButtons">
-                  <li class="deskList1"></li>
-                  <li class="deskList2"></li>
-                  <li class="deskList3"></li>
-                </ul>
-              <div class="closeProj"><i class="fa fa-times" onclick="closeall()"></i></div>
-            </div>
-            <div><img src="/images/snap3.png" class="deskImag" alt="project-image"></div>
-            <div class="desktopFlex">
-              <p class="deskpara"></p>
-              <aside>
-                <ul class="deskButtonlist"></ul>
-                <div class="liner"></div>
-                <div class="separater">
-                  <div class="seeLive">
-                    <a href="" id="liveLink"> see Live <img src="images/live.png" alt="github pages"> </a>
-                  </div>
-                  <div class="seeSource">
-                    <a href="" id="sourceLink"> See Source <img src="images/vect1.png" alt="github"> </a>
-                  </div>
-                </div>
-              </aside>
+          </section>
+        </div>
+        
+        <div class="tonic-desktop">
+          <div class="cont-left">
+            <div class="imagez3">
+              <img src="images/desk1.svg" alt="snap"/>
             </div>
           </div>
-        </section>
+          <div class="tonic-content">
+            <h2>Tonic</h2>
+            <div>
+              <ul id="profss">
+                <li id="cannopyy">CANOPY</li>
+                <li>Back End Dev</li>
+                <li>2015</li>
+              </ul>
+            </div>
+            <div>
+              <p>
+                A daily selection of privately personalized: no accounts or
+                sign-ups required
+              </p>
+            </div>
+            <div>
+              <ul class="button">
+                <li><button type="button">html</button></li>
+                <li><button type="button">css</button></li>
+                <li><button type="button">javascript</button></li>
+              </ul>
+            </div>
+            <div class="hidden3">
+              <button type="button">See Project</button>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <!-------About section starts Here------------->
+      <!------About section starts from Here------->
 
       <section class="abt" id="about">
         <div class="about">
@@ -150,23 +177,11 @@
             </p>
             <a id="connect1" href="index.html">LET'S CONNECT</a>
             <ul class="details-list">
-              <li>
-                <a href=""> <img src="images/Twitter.svg" alt="Twitter" /></a>
-              </li>
-              <li>
-                <a href=""> <img src="images/LinkedIn.svg" alt="LinkedIn" /></a>
-              </li>
-              <li>
-                <a href=""> <img src="images/Github.svg" alt="Github" /></a>
-              </li>
-              <li>
-                <a href="">
-                  <img src="images/Angellist.svg" alt="Angellist"
-                /></a>
-              </li>
-              <li>
-                <a href=""> <img src="images/Medium.svg" alt="Media" /></a>
-              </li>
+              <li><a href=""> <img src="images/Twitter.svg" alt="Twitter"/></a></li>
+              <li><a href=""> <img src="images/LinkedIn.svg" alt="LinkedIn"/></a></li>
+              <li><a href=""> <img src="images/Github.svg" alt="Github"/></a></li>
+              <li><a href=""> <img src="images/Angellist.svg" alt="Angellist"/></a></li>
+              <li><a href=""> <img src="images/Medium.svg" alt="Media"/></a></li>
             </ul>
             <div class="hidden4">
               <button type="button">Get my resume</button>
@@ -176,30 +191,25 @@
             <div class="language">
               <div id="profiler">
                 <a href="" id="langz">Languages</a>
-                <a href=""
-                  ><img
-                    id="language"
-                    src="images/Arrow-down.svg"
-                    alt="languages"
-                /></a>
+                <a href=""><img id="language" src="images/Arrow-down.svg" alt="languages"/></a>
               </div>
             </div>
             <ul class="languages">
               <li>
                 <a href="">
-                  <img src="images/Javascript.svg" alt="JavaScript" />
+                  <img src="images/Javascript.svg" alt="JavaScript"/>
                   <p>JavaScript</p>
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="images/html-img.svg" alt="Html" />
+                  <img src="images/html-img.svg" alt="Html"/>
                   <p>html</p>
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="images/css.svg" alt="css" />
+                  <img src="images/css.svg" alt="css"/>
                   <p>css</p>
                 </a>
               </li>
@@ -207,19 +217,19 @@
             <ul class="languages1">
               <li>
                 <a href="">
-                  <img src="images/Javascript.svg" alt="JavaScript" />
+                  <img src="images/Javascript.svg" alt="JavaScript"/>
                   <p>JavaScript</p>
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="images/html-img.svg" alt="Html" />
+                  <img src="images/html-img.svg" alt="Html"/>
                   <p>html</p>
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="images/css.svg" alt="css" />
+                  <img src="images/css.svg" alt="css"/>
                   <p>css</p>
                 </a>
               </li>
@@ -227,15 +237,11 @@
             <ul class="frame-skill">
               <li>
                 <div id="profiler1"><a href="">Frameworks</a></div>
-                <a href=""
-                  ><img id="fram" src="images/Arrow-right.svg" alt="frameworks"
-                /></a>
+                <a href=""><img id="fram" src="images/Arrow-right.svg" alt="frameworks"/></a>
               </li>
               <li>
                 <div id="profiler2"><a href="index.html">Skills</a></div>
-                <a href=""
-                  ><img id="skill" src="images/Arrow-right.svg" alt="skills"
-                /></a>
+                <a href=""><img id="skill" src="images/Arrow-right.svg" alt="skills"/></a>
               </li>
             </ul>
           </div>
@@ -251,37 +257,14 @@
               love to help with it.
             </p>
           </div>
-          <form
-            action="https://formspree.io/f/mgedkqkj"
-            method="post"
-            autocomplete="off"
-          >
+          <form action="https://formspree.io/f/mgedkqkj" method="post" autocomplete="off">
             <div class="data1">
-              <input
-                name="Name"
-                type="text"
-                placeholder="your Full name"
-                required
-                maxlength="30"
-              />
+              <input name="Name" type="text" placeholder="your Full name" required maxlength="30" />
               <br />
-              <input
-                name="email"
-                type="email"
-                id="email"
-                placeholder="your Email e.g example@gmail.com"
-                required
-              />
+              <input name="email" type="email" id="email" placeholder="your Email e.g example@gmail.com" required />
               <br />
-              <textarea
-                name="Message"
-                class="textarea"
-                cols="30"
-                rows="10"
-                placeholder="input your message here"
-                maxlength="500"
-                required
-              ></textarea>
+              <textarea name="Message" class="textarea" cols="30" rows="10" placeholder="input your message here"
+                maxlength="500" required></textarea>
               <br />
             </div>
             <button type="submit">Get in touch</button>

@@ -1,51 +1,83 @@
-const liveBtn = 'https://kasaija-kenneth.github.io/';
-const sourceBtn = 'https://github.com/Kasaija-Kenneth/mobile_first_portfolio';
 
+const liveButton = 'https://kasaija-kenneth.github.io/';
+const codeButton = 'https://github.com/Kasaija-Kenneth/mobile_first_portfolio';
 const portfolio = [
-
-  /*Mobile*/
-
   {
-    name: 'tonic',
-    image: 'images/Snapshoot-portfolio-1.svg',
-    name2: 'tonic',
-    image2: 'images/Snapshoot-portfolio-3.svg',
-    description: 'some text some text some text some text some text',
-    technologies: ['html', 'css', 'javascript', 'bootstrap', 'ruby', 'github']
+    name: 'Tonic',
+    image: 'images/pop.png',
+    name2: 'Tonic',
+    image2: 'images/snap.png',
+    description: 'Lorem Ipsum is simply dummy text of the printing and',
+    technologies: ['html', 'css', 'javascript', 'bootstrap', 'ruby', 'github'],
+  },
+  {
+    name: 'Multi-Post Stories',
+    image: 'images/multip.png',
+    name2: 'Multi-Post Stories',
+    image2: 'images/story.png',
+    description: 'Lorem Ipsum is simply dummy text of the printing and',
+    technologies: ['html', 'css', 'javascript', 'bootstrap', 'ruby', 'github'],
+  },
+  {
+    name: 'Facebook 360',
+    name2: 'Tonic',
+    image: 'images/facebpp.png',
+    image2: 'images/snap1.png',
+    description: 'Lorem Ipsum is simply dummy text of the printing and',
+    technologies: ['html', 'css', 'javascript', 'bootstrap', 'ruby', 'github'],
   },
 
-  /*Desktop*/
-
   {
-    name: 'uber navigation',
-    image: 'images/desk4.svg',
-    name2: 'multi-post stories',
-    image2: 'images/desk2.svg',
-    description: 'some text some text some text some text some text',
-    technologies: ['html', 'css', 'javascript', 'bootstrap', 'ruby', 'github']
-  }
+    name: 'Uber Navigation',
+    name2: 'Multi-Post Stories',
+    image2: 'images/snap3.png',
+    image: 'images/uberp.png',
+    description: 'some text some text some text some text',
+    technologies: ['html', 'css', 'javascript', 'bootstrap', 'ruby', 'github'],
+  },
 ];
 
-const projectcards = [
+const projectCards = [
   {
     card: 1,
-    name: 'tonic',
-    name2: 'tonic',
-    image: 'images/Snapshoot-1.svg',
-    image2: 'images/Snapshoot-1.svg',
-    description: 'some text some text some text some text some text',
+    name: 'Tonic',
+    name2: 'Tonic',
+    image: 'images/snap.png',
+    image2: 'images/tonic1.png',
+    description: 'some text some text some text some text',
     technologies: ['html', 'css', 'javascript'],
     specifics: ['CANOPY', 'Back End Dev', '2015'],
     specifics2: ['CANOPY', 'Back End Dev', '2015'],
   },
-
+  {
+    card: 2,
+    name: 'Multi-Post Stories',
+    name2: 'Multi-Post Stories',
+    image: 'images/story.png',
+    image2: 'images/multi2.png',
+    description: 'feature that all course of a day without spamming theirfriends',
+    technologies: ['html', 'css', 'javascript'],
+    specifics: ['CANOPY', 'Back End Dev', '2015'],
+    specifics2: ['FACEBOOK', 'Full Stack Dev', '2015'],
+  },
+  {
+    card: 3,
+    name: 'Tonic',
+    name2: 'Facebook 360',
+    image: 'images/snap1.png',
+    image2: 'images/portcard.png',
+    description: ` Exploring the future of media in Facebook's first Virtual RealityVR.`,
+    technologies: ['html', 'css', 'javascript'],
+    specifics: ['CANOPY', 'Back End Dev', '2015'],
+    specifics2: ['FACEBOOK', 'Full Stack Dev', '2015'],
+  },
   {
     card: 4,
-    name: 'multi post stories',
-    name2: 'uber navigation',
-    image: 'images/desk1.svg',
-    image2: 'images/desk1.svg',
-    description: 'some text some text some text some text some text',
+    name: 'Multi-Post Stories',
+    name2: 'Uber Navigation',
+    image: 'images/snap3.png',
+    image2: 'images/uber2.png',
+    description: `  A smart assistant to make driving more safe, efficient, and fun by your car.`,
     technologies: ['html', 'css', 'javascript'],
     specifics: ['CANOPY', 'Back End Dev', '2015'],
     specifics2: ['UBER', 'Lead Developer', '2018'],
@@ -53,10 +85,10 @@ const projectcards = [
 ];
 
 const portfolioSection = document.getElementById('portfolio');
-portfolioSection.innerHTML = projectcards.map((project, index) =>`
+portfolioSection.innerHTML = projectCards.map((project, index) => `
 <section class="card ${index % 2 !== 0 ? 'image-left' : 'image-right'}">
   <div class="content-right">
-    <img class="mobileCard" src="${project.image}" alt="Tonic image"/>
+    <img class="mobileCard" src="${project.image}" alt="Tonic image" />
     <img class="desktopCard" src="${project.image2}" alt="Nature image"/>
   </div>
   <div class="content-left">
@@ -97,8 +129,7 @@ portfolioSection.innerHTML = projectcards.map((project, index) =>`
     </div>
   </div>
 </section>
-    `,
-  )
+ `,)
   .join('');
 
 /* Desktop popup */
