@@ -1,0 +1,6 @@
+{
+  "html.format.preserveNewLines": false,
+  "scss.format.preserveNewLines": false,
+  "less.format.preserveNewLines": false,
+  "css.format.preserveNewLines": false
+}
