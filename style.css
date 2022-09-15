@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Poppins&family=Roboto&family=Ubuntu&display=swap");
-
 .main-wrapper {
   position: relative;
   margin: auto;
@@ -8,13 +6,13 @@
   margin-bottom: 114px;
   border: 1px solid white;
   border-bottom-left-radius: 7em;
-  max-width: 400px;
+  max-width: 375px;
   min-width: 375px;
 }
 
 .global-wrapper {
   background-color: #f2f4f8;
-  max-width: 400px;
+  max-width: 375px;
   margin: auto;
 }
 
@@ -28,6 +26,7 @@
 body {
   background-color: #e5e5e5;
   font-family: Poppins, sans-serif, Helvetica, Arial, Verdana, Tahoma;
+ 
 }
 
 .works {
@@ -462,7 +461,7 @@ p {
 }
 
 .buttonx1 {
-  display: flex;
+  display: none;
   list-style: none;
   justify-content: space-between;
   width: 150px;
@@ -473,6 +472,8 @@ p {
 .buttonx {
   display: none;
 }
+
+
 
 .buttonx1 button {
   color: #6070ff;
@@ -833,6 +834,7 @@ button:hover {
   margin-bottom: 0;
 }
 
+<<<<<<< HEAD
 .parag {
   align-items: center;
   width: 80%;
@@ -866,9 +868,11 @@ button:hover {
   margin-top: 30px;
 }
 
+=======
+>>>>>>> b82ddf67cd9fde4bb6e25b47316d0b8ce46a85d9
 .parag p {
   color: #ebebff;
-  margin-bottom: 20px;
+  margin-bottom: 87px;
   margin-top: 12px;
   padding: 4px;
   font-size: 16px;
@@ -957,15 +961,14 @@ button:hover {
 
 .contact-form {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: stretch;
   max-width: 100%;
   border: 1px solid #6070ff;
   padding: 103px 24px 1px 24px;
   border-top-left-radius: 5em;
   font-family: Poppins, sans-serif, Helvetica, Arial, Verdana, Tahoma;
+  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
   background-color: #6070ff;
   background-image: url(images/mobile-footer-img.svg);
   background-repeat: no-repeat;
@@ -977,6 +980,15 @@ button:hover {
   display: flex;
   flex-direction: column;
   width: 327px;
+}
+
+.contact-form h2 {
+  justify-self: center;
+  font-size: 40px;
+  color: white;
+  align-self: center;
+  font-weight: 700;
+  margin-top: 50px;
 }
 
 .contact-form input {
@@ -994,6 +1006,12 @@ form .data1 {
   width: 100%;
   display: grid;
   justify-items: center;
+}
+
+.parag {
+  width: 80%;
+  position: relative;
+  left: -6px;
 }
 
 .contact-form .parag {
@@ -1210,28 +1228,7 @@ footer {
 }
 
 .mobImag {
-  zoom: 60%;
-  margin-left: 27px;
-}
-
-.imgContainer {
-  display: flex;
-  justify-content: center;
-}
-
-.top-Modal {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.mobileHeading {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #172b4d;
+  zoom: 50%;
 }
 
 .mobileDetail {
@@ -1241,8 +1238,8 @@ footer {
   height: 100%;
   position: fixed;
   top: 0%;
-  left: 2.5%;
-  max-width: 375px;
+  left: 2.8%;
+  max-width: 353px;
   margin: auto;
   right: 20px;
   background-color: white;
@@ -1254,6 +1251,7 @@ footer {
 
 .mobileIntro {
   display: flex;
+  position: relative;
   justify-content: space-between;
   width: 90%;
   padding-top: 20px;
@@ -1263,6 +1261,14 @@ footer {
   align-items: center;
 } */
 
+<<<<<<< HEAD
+=======
+.mobileIntro h2 {
+  font-size: 20px;
+  width: 100%;
+}
+
+>>>>>>> b82ddf67cd9fde4bb6e25b47316d0b8ce46a85d9
 .mobileFlex {
   display: flex;
   justify-content: space-between;
@@ -1407,7 +1413,7 @@ footer {
   padding-right: 1%;
   padding-bottom: 3em;
   padding-top: 3em;
-  margin-bottom: 2%;
+  margin-bottom: 20%;
   border: 1px solid #dfe1e6;
   border-radius: 20px;
   background-color: white;
@@ -1460,6 +1466,7 @@ footer {
     margin-top: 0;
   }
 
+<<<<<<< HEAD
   .desktopIntro h2 {
     margin-left: 60px;
   }
@@ -1470,6 +1477,9 @@ footer {
   }
 
   .content-left div h2 {
+=======
+  .content-left div h2{
+>>>>>>> b82ddf67cd9fde4bb6e25b47316d0b8ce46a85d9
     margin: 0;
   }
 
@@ -1933,6 +1943,7 @@ footer {
     margin-top: 2px;
   }
 
+<<<<<<< HEAD
   .parag p {
     font-size: 18px;
     color: #ebebff;
@@ -1943,6 +1954,9 @@ footer {
   }
 
   .languages1 li a p {
+=======
+  .languages1 li a p{
+>>>>>>> b82ddf67cd9fde4bb6e25b47316d0b8ce46a85d9
     display: flex;
     text-align: center;
     padding: 0;
@@ -2002,17 +2016,28 @@ footer {
   .parag {
     width: 80%;
     position: relative;
-    left: 36px;
   }
 
+<<<<<<< HEAD
+=======
+  .parag p {
+    font-size: 18px;
+    color: #ebebff;
+    padding-bottom: 15px;
+    padding-left: 0%;
+    width: 45%;
+    text-align: center;
+  }
+
+>>>>>>> b82ddf67cd9fde4bb6e25b47316d0b8ce46a85d9
   .data1 input {
     height: 50px;
+    position: relative;
     border-radius: 1px;
     width: 130%;
     border-color: #cfd8dc;
     border-style: none;
     margin-bottom: 20px;
-    left: -20%;
   }
 
   textarea {
@@ -2020,7 +2045,11 @@ footer {
     width: 130%;
     border-style: none;
     margin-bottom: 20px;
+<<<<<<< HEAD
     left: -20%;
+=======
+    position: relative;
+>>>>>>> b82ddf67cd9fde4bb6e25b47316d0b8ce46a85d9
     border-radius: 0.1px;
   }
 
