@@ -19,9 +19,9 @@
             <img id="close-icon" src="images/close-icon.svg" alt="close-icon">
           </a>
           <ul id="mobile-nav-list">
-            <li><a href="#works" class="mobile-nav-item">Portfolio</a></li>
+            <li><a href="#work" class="mobile-nav-item">Portfolio</a></li>
             <li><a href="#about" class="mobile-nav-item">About</a></li>
-            <li><a href="#contactMe" class="mobile-nav-item">Contact</a></li>
+            <li><a href="#contact" class="mobile-nav-item">Contact</a></li>
           </ul>
         </div>
         <header>
@@ -64,10 +64,16 @@
           <section class="desktop">
             <div class="desktopIntro">
               <h2 class="deskHeading"></h2>
-              <div class="closeProj"><i class="fa fa-times" onclick="closeall()></i></div>
+              <!-- <ul class="deskButtons">
+                <li class="deskList1"></li>
+                <li class="deskList2"></li>
+                <li class="deskList3"></li>
+              </ul> -->
+              
+              <div class="closeProj"><i class="fa fa-times" onclick="closeall()"></i></div>
             </div>
             <ul class="deskButtonlist"></ul>
-            <div><img src="images/desk1.svg" class="deskImag" alt="project-image"></div>
+            <div class="imgContainer"><img src="images/desk1.svg" class="deskImag" alt="project-image"></div>
             <div class="desktopFlex">
               <p class="deskpara"></p>
               <aside>
@@ -90,15 +96,21 @@
 
         <div id="mobileWrap" class="modal">
           <section class="mobileDetail">
-            <div class="mobileIntro"><h2 class="mobileHeading"></h2>
+            <div class="mobileIntro">
+              <div class="top-Modal">
+                <div>
+              <h2 class="mobileHeading"></h2>
+                </div>
+              <div class="closeProj"><img src="images/close-icon-popup.png"  onclick="closeall()"></i></div>
+            </div>
               <ul class="mobileButtons">
                 <li class="mobList1"></li>
                 <li class="mobList2"></li>
                 <li class="mobList3"></li>
               </ul>
-              <div class="closeProj"><i class="fa fa-times nam"></i></div>
+              
             </div>
-            <ul class ="mobButtonlist"></ul>
+            <ul class="mobButtonlist"></ul>
             <div><img src="images/" class="mobImag" alt="project-image"></div>
             <div class="mobileFlex">
               <p class="mobilepara"></p>
@@ -115,6 +127,40 @@
               </aside>
             </div>
           </section>
+        </div>
+        
+        <div class="tonic-desktop">
+          <div class="cont-left">
+            <div class="imagez3">
+              <img src="images/desk1.svg" alt="snap"/>
+            </div>
+          </div>
+          <div class="tonic-content">
+            <h2>Tonic</h2>
+            <div>
+              <ul id="profss">
+                <li id="cannopyy">CANOPY</li>
+                <li>Back End Dev</li>
+                <li>2015</li>
+              </ul>
+            </div>
+            <div>
+              <p>
+                A daily selection of privately personalized: no accounts or
+                sign-ups required
+              </p>
+            </div>
+            <div>
+              <ul class="button">
+                <li><button type="button">html</button></li>
+                <li><button type="button">css</button></li>
+                <li><button type="button">javascript</button></li>
+              </ul>
+            </div>
+            <div class="hidden3">
+              <button type="button">See Project</button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -205,7 +251,7 @@
           </div>
         </div>
       </section>
-      <footer id="contactMe">
+      <footer>
         <div class="contact-form" id="contact">
           <h2>Contact Me</h2>
           <div class="parag">
@@ -215,7 +261,7 @@
               love to help with it.
             </p>
           </div>
-          <form action="https://formspree.io/f/mgedkqkj" method="post" autocomplete="off">
+          <form action="https://formspree.io/f/mgedkqkj" method="post" autocomplete="off" class="form-block">
             <div class="data1">
               <input name="Name" type="text" placeholder="your Full name" required maxlength="30" />
               <br />

@@ -16,7 +16,3 @@ hamburgeropen.addEventListener('click', openMenu);
 hamburgerListItem.forEach((element) => {
   element.addEventListener('click', closeMenu);
 });
-
-
-
-
