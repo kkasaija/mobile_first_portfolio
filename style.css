@@ -78,6 +78,21 @@ header {
   cursor: pointer;
 }
 
+.mobButtonlist li {
+  border-style: solid;
+  border-width: 1.5px;
+  border-radius: 0%;
+  padding: 3px;
+  border-color: #000;
+  height: 25px;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-weight: 400;
+  background-color: #ebebff;
+  color: #6070ff;
+  margin-bottom: 15px;
+}
+
 .mobile-nav ul {
   list-style: none;
   padding: 0;
@@ -110,18 +125,6 @@ header {
   margin-right: 20px;
   width: fit-content;
   background-color: #ebebff;
-}
-
-.mobButtonlist li {
-  height: 25px;
-  border-style: none;
-  margin-right: 10px;
-  margin-top: 10px;
-  font-weight: 400;
-  background-color: #ebebff;
-  border-radius: 10px;
-  color: #6070ff;
-  margin-bottom: 15px;
 }
 
 .mobileButtons li {
@@ -842,7 +845,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 50px;
+  padding-left: 0;
 }
 
 .contact-form h2 {
@@ -1260,7 +1263,6 @@ footer {
   align-items: center;
 } */
 
-
 .mobileFlex {
   display: flex;
   justify-content: space-between;
@@ -1276,14 +1278,6 @@ footer {
   justify-content: center;
   padding-left: 0;
   margin-right: 2px;
-}
-
-.mobButtonlist li {
-  border-style: solid;
-  border-width: 1.5px;
-  border-radius: 0%;
-  padding: 3px;
-  border-color: #000;
 }
 
 .mobileButtons {
@@ -1438,7 +1432,7 @@ footer {
 
   .image-right {
     display: flex;
-    max-width: 85%;
+    width: 85%;
     flex-direction: row-reverse;
     margin: auto;
     padding-left: 30px;
@@ -1464,6 +1458,15 @@ footer {
 
   .content-left div {
     margin-top: 0;
+  }
+
+  .desktopIntro h2 {
+    margin-left: 60px;
+  }
+
+  .contact-form h2 {
+    font-size: 50px;
+    margin-left: 0%;
   }
 
   .content-left div h2 {
@@ -1492,7 +1495,7 @@ footer {
   }
 
   .image-left .content-left {
-    max-width: auto;
+    width: auto;
   }
 
   .image-left {
@@ -1626,7 +1629,6 @@ footer {
     width: max-content;
     padding-left: 0%;
     margin-left: 0%;
-    display: none;
   }
 
   .deskButtons li {
@@ -1651,15 +1653,11 @@ footer {
     align-items: center;
   }
 
-  .desktopIntro h2 {
-    margin-left: 60px;
-  }
-
   .desktopFlex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    align-content: center;
     flex-direction: column;
     flex-wrap: wrap;
   }
@@ -1912,12 +1910,36 @@ footer {
     height: 98px;
   }
 
+  .mobileDetail img {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .imagez1 img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .imagez img {
+    height: 100%;
+    width: 100%;
+  }
+
   .languages1 li a img {
     width: 48px;
     height: 48px;
     border-radius: 20px;
     margin-left: 23px;
     margin-top: 2px;
+  }
+
+  .parag p {
+    font-size: 18px;
+    color: #ebebff;
+    padding-bottom: 15px;
+    padding-left: 0%;
+    width: 45%;
+    text-align: center;
   }
 
   .languages1 li a p {
@@ -1973,11 +1995,6 @@ footer {
     display: none;
   }
 
-  .contact-form h2 {
-    font-size: 50px;
-    margin-left: 0%;
-  }
-
   .data1 {
     width: 100%;
   }
@@ -1986,16 +2003,6 @@ footer {
     width: 80%;
     position: relative;
     left: 36px;
-  }
-
-  .parag p {
-    font-size: 18px;
-    color: #ebebff;
-    padding-bottom: 15px;
-    padding-left: 0%;
-
-    width: 45%;
-    text-align: center;
   }
 
   .data1 input {
@@ -2013,7 +2020,6 @@ footer {
     width: 130%;
     border-style: none;
     margin-bottom: 20px;
-
     left: -20%;
     border-radius: 0.1px;
   }
@@ -2047,21 +2053,6 @@ footer {
     background-position: center;
     background-size: 800px 370px;
     padding-top: 0.5em;
-  }
-
-  .mobileDetail img {
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-
-  .imagez1 img {
-    height: 100%;
-    width: 100%;
-  }
-
-  .imagez img {
-    height: 100%;
-    width: 100%;
   }
 
   .languages li a img {
