@@ -1355,7 +1355,7 @@ footer {
 
 .image-right,
 .image-left {
-  display: flex;
+  /* display: flex; */
   padding-right: 1%;
   padding-bottom: 3em;
   padding-top: 3em;
