@@ -6,13 +6,13 @@
   margin-bottom: 114px;
   border: 1px solid white;
   border-bottom-left-radius: 7em;
-  max-width: 400px;
+  max-width: 375px;
   min-width: 375px;
 }
 
 .global-wrapper {
   background-color: #f2f4f8;
-  max-width: 400px;
+  max-width: 375px;
   margin: auto;
 }
 
@@ -458,7 +458,7 @@ p {
 }
 
 .buttonx1 {
-  display: flex;
+  display: none;
   list-style: none;
   justify-content: space-between;
   width: 150px;
@@ -469,6 +469,8 @@ p {
 .buttonx {
   display: none;
 }
+
+
 
 .buttonx1 button {
   color: #6070ff;
@@ -795,7 +797,6 @@ button:hover {
   padding-top: 6em;
   padding-left: 37px;
   padding-right: 2px;
-  min-width: 358px;
   border-top-right-radius: 50px;
   background-color: white;
   padding-bottom: 80px;
@@ -806,7 +807,7 @@ button:hover {
   color: #344563;
   margin-bottom: 10px;
   padding-bottom: 0%;
-  margin-top: 1px;
+  margin-top: 18px;
   padding-top: 0%;
 }
 
@@ -947,7 +948,7 @@ button:hover {
   color: white;
   align-self: center;
   font-weight: 700;
-  margin: 00.0001px;
+  margin-top: 7%;
 }
 
 .contact-form input {
@@ -963,7 +964,6 @@ button:hover {
 
 form .data1 {
   width: 100%;
-  display: grid;
   justify-items: center;
 }
 
@@ -974,7 +974,6 @@ form .data1 {
 }
 
 .contact-form .parag {
-  width: inherit;
   justify-content: center;
   display: flex;
 }
@@ -1216,10 +1215,6 @@ footer {
   padding-top: 20px;
 }
 
-/* .mobButtonlist {
-  align-items: center;
-} */
-
 .mobileIntro h2 {
   font-size: 20px;
   width: 100%;
@@ -1247,7 +1242,7 @@ footer {
   border-width: 1.5px;
   border-radius: 0%;
   padding: 3px;
-  border-color: #000;
+  border-color: #6070ff;
 }
 
 .mobileButtons {
@@ -1377,7 +1372,7 @@ footer {
   padding-right: 1%;
   padding-bottom: 3em;
   padding-top: 3em;
-  margin-bottom: 2%;
+  margin-bottom: 20%;
   border: 1px solid #dfe1e6;
   border-radius: 20px;
   background-color: white;
@@ -1402,14 +1397,14 @@ footer {
 
   .image-right {
     display: flex;
-    max-width: 85%;
+    width: 85%;
     flex-direction: row-reverse;
     margin: auto;
     padding-left: 30px;
     border: 1px solid #dfe1e6;
     border-radius: 20px;
     background-color: white;
-    margin-top: 60px;
+    margin-top: 114px;
     padding-right: 20px;
     align-items: stretch;
     justify-content: stretch;
@@ -1423,7 +1418,7 @@ footer {
   .content-left {
     width: 50%;
     margin-right: auto;
-    padding-left: 30px;
+    padding-left: 50px;
   }
 
   .content-left div {
@@ -1445,11 +1440,6 @@ footer {
     flex-grow: 2;
   }
 
-  /* .image-right .content-left {
-    padding: 0%;
-    margin: 0%;
-  } */
-
   .image-left .content-right {
     padding: 0%;
     margin: 0%;
@@ -1468,7 +1458,7 @@ footer {
     border: 1px solid #dfe1e6;
     border-radius: 20px;
     background-color: white;
-    margin-top: 60px;
+    margin-top: 114px;
     padding-right: 3%;
   }
 
@@ -1647,14 +1637,14 @@ footer {
     height: 25px;
     border-color: #ebebff;
     background-color: #ebebff;
-    border-style: none;
+    border-style: solid;
     margin-right: 10px;
     margin-top: 10px;
     font-weight: 400;
-    border-radius: 10px;
     color: #6070ff;
     padding: 1px 5px;
     margin-bottom: 15px;
+    border-width: 1.5px;
   }
 
   .contact-form button {
@@ -1949,7 +1939,6 @@ footer {
   .parag {
     width: 80%;
     position: relative;
-    left: 36px;
   }
 
   .parag p {
@@ -1957,7 +1946,6 @@ footer {
     color: #ebebff;
     padding-bottom: 15px;
     padding-left: 0%;
-    margin-left: 21%;
     width: 45%;
     text-align: center;
   }
