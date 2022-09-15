@@ -977,6 +977,7 @@ button:hover {
   width: 327px;
 }
 
+<<<<<<< HEAD
 .contact-form h2 {
   justify-self: center;
   font-size: 40px;
@@ -986,6 +987,8 @@ button:hover {
   margin-top: 7%;
 }
 
+=======
+>>>>>>> 1dfaebd54f188fa5afc3d739a21668513b107908
 .contact-form input {
   height: 50px;
   border-radius: 10px;
@@ -1264,10 +1267,17 @@ footer {
   padding-top: 20px;
 }
 
+<<<<<<< HEAD
 .mobileIntro h2 {
   font-size: 20px;
   width: 100%;
 }
+=======
+/* .mobButtonlist {
+  align-items: center;
+} */
+
+>>>>>>> 1dfaebd54f188fa5afc3d739a21668513b107908
 
 .mobileFlex {
   display: flex;
@@ -1995,6 +2005,10 @@ footer {
     color: #ebebff;
     padding-bottom: 15px;
     padding-left: 0%;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1dfaebd54f188fa5afc3d739a21668513b107908
     width: 45%;
     text-align: center;
   }
