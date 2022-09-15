@@ -1356,7 +1356,6 @@ footer {
 
 .image-right,
 .image-left {
-  /* display: flex; */
   padding-right: 1%;
   padding-bottom: 3em;
   padding-top: 3em;
@@ -1384,6 +1383,7 @@ footer {
   }
 
   .image-right {
+    display: flex;
     max-width: 85%;
     flex-direction: row-reverse;
     margin: auto;
@@ -1442,6 +1442,7 @@ footer {
   }
 
   .image-left {
+    display: flex;
     max-width: 85%;
     flex-direction: row-reverse;
     margin: auto;
