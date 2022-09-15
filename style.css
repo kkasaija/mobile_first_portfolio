@@ -601,6 +601,14 @@ button:hover {
   letter-spacing: 3%;
 }
 
+.contact-form {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
 .contact-form button {
   height: 50px;
   border-radius: 10px;
@@ -830,9 +838,25 @@ button:hover {
   margin-bottom: 0;
 }
 
+.parag {
+  align-items: center;
+}
+
+form-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: center;
+padding-left: 50px;
+}
+
+#contact h2{
+  margin-top: 30px;
+}
+
 .parag p {
   color: #ebebff;
-  margin-bottom: 87px;
+  margin-bottom: 20px;
   margin-top: 12px;
   padding: 4px;
   font-size: 16px;
@@ -1980,14 +2004,13 @@ footer {
     color: #ebebff;
     padding-bottom: 15px;
     padding-left: 0%;
-    margin-left: 21%;
+    
     width: 45%;
     text-align: center;
   }
 
   .data1 input {
     height: 50px;
-    position: relative;
     border-radius: 1px;
     width: 130%;
     border-color: #cfd8dc;
@@ -2001,7 +2024,7 @@ footer {
     width: 130%;
     border-style: none;
     margin-bottom: 20px;
-    position: relative;
+  
     left: -20%;
     border-radius: 0.1px;
   }
