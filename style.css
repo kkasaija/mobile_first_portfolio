@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Poppins&family=Roboto&family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Poppins&family=Roboto&family=Ubuntu&display=swap");
 
 .main-wrapper {
   position: relative;
@@ -601,14 +601,6 @@ button:hover {
   letter-spacing: 3%;
 }
 
-.contact-form {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
-
 .contact-form button {
   height: 50px;
   border-radius: 10px;
@@ -840,17 +832,34 @@ button:hover {
 
 .parag {
   align-items: center;
+  width: 80%;
+  position: relative;
+  left: -6px;
 }
 
-form-block {
+.form-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
-align-items: center;
-padding-left: 50px;
+  align-items: center;
+  padding-left: 50px;
 }
 
-#contact h2{
+.contact-form h2 {
+  justify-self: center;
+  font-size: 40px;
+  color: white;
+  align-self: center;
+  font-weight: 700;
+  margin: 00.0001px;
+}
+
+.mobileIntro h2 {
+  font-size: 20px;
+  width: 100%;
+}
+
+#contact h2 {
   margin-top: 30px;
 }
 
@@ -945,14 +954,15 @@ padding-left: 50px;
 
 .contact-form {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: stretch;
   max-width: 100%;
   border: 1px solid #6070ff;
   padding: 103px 24px 1px 24px;
   border-top-left-radius: 5em;
   font-family: Poppins, sans-serif, Helvetica, Arial, Verdana, Tahoma;
-  justify-content: center;
-  flex-direction: column;
-  align-items: stretch;
   background-color: #6070ff;
   background-image: url(images/mobile-footer-img.svg);
   background-repeat: no-repeat;
@@ -964,15 +974,6 @@ padding-left: 50px;
   display: flex;
   flex-direction: column;
   width: 327px;
-}
-
-.contact-form h2 {
-  justify-self: center;
-  font-size: 40px;
-  color: white;
-  align-self: center;
-  font-weight: 700;
-  margin: 00.0001px;
 }
 
 .contact-form input {
@@ -990,12 +991,6 @@ form .data1 {
   width: 100%;
   display: grid;
   justify-items: center;
-}
-
-.parag {
-  width: 80%;
-  position: relative;
-  left: -6px;
 }
 
 .contact-form .parag {
@@ -1228,13 +1223,12 @@ footer {
 }
 
 .mobileHeading {
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
-
+  color: #172b4d;
 }
 
 .mobileDetail {
@@ -1257,7 +1251,6 @@ footer {
 
 .mobileIntro {
   display: flex;
-  
   justify-content: space-between;
   width: 90%;
   padding-top: 20px;
@@ -1267,10 +1260,6 @@ footer {
   align-items: center;
 } */
 
-.mobileIntro h2 {
-  font-size: 20px;
-  width: 100%;
-}
 
 .mobileFlex {
   display: flex;
@@ -2004,7 +1993,7 @@ footer {
     color: #ebebff;
     padding-bottom: 15px;
     padding-left: 0%;
-    
+
     width: 45%;
     text-align: center;
   }
@@ -2024,7 +2013,7 @@ footer {
     width: 130%;
     border-style: none;
     margin-bottom: 20px;
-  
+
     left: -20%;
     border-radius: 0.1px;
   }
