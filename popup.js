@@ -86,7 +86,7 @@ const projectCards = [
 
 const portfolioSection = document.getElementById('portfolio');
 portfolioSection.innerHTML = projectCards.map((project, index) => `
-<section class="card ${index % 2 !== 0 ? 'image-left' : 'image-right'}">
+<section class="${index % 2 !== 0 ? 'image-left' : 'image-right'}">
   <div class="content-right">
     <img class="mobileCard" src="${project.image}" alt="Tonic image" />
     <img class="desktopCard" src="${project.image2}" alt="Nature image"/>
@@ -109,7 +109,7 @@ portfolioSection.innerHTML = projectCards.map((project, index) => `
         <img src="images/desk4.svg" alt="Counter icon"/>
         <h3 class="">${project.specifics2[2]}</h3>
       </div>
-      <div class="">
+      <div class="cont">
         <p class="tonicm-p">${project.description}</p>
         <p class="tonicd-p">${project.description}</p>
         <ul class="button">
