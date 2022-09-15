@@ -64,7 +64,7 @@
           <section class="desktop">
             <div class="desktopIntro">
               <h2 class="deskHeading"></h2>
-              <div class="closeProj"><i class="fa fa-times" onclick="closeall()></i></div>
+              <div class="closeProj"><i class="fa fa-times" onclick="closeall()"></i></div>
             </div>
             <ul class="deskButtonlist"></ul>
             <div><img src="images/desk1.svg" class="deskImag" alt="project-image"></div>
@@ -90,15 +90,16 @@
 
         <div id="mobileWrap" class="modal">
           <section class="mobileDetail">
-            <div class="mobileIntro"><h2 class="mobileHeading"></h2>
+            <div class="mobileIntro">
+              <h2 class="mobileHeading"></h2>
               <ul class="mobileButtons">
                 <li class="mobList1"></li>
                 <li class="mobList2"></li>
                 <li class="mobList3"></li>
               </ul>
-              <div class="closeProj"><i class="fa fa-times nam"></i></div>
+              <div class="closeProj"><i class="fa fa-times" onclick="closeall()"></i></div>
             </div>
-            <ul class ="mobButtonlist"></ul>
+            <ul class="mobButtonlist"></ul>
             <div><img src="images/" class="mobImag" alt="project-image"></div>
             <div class="mobileFlex">
               <p class="mobilepara"></p>

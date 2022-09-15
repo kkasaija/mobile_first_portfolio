@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Poppins&family=Roboto&family=Ubuntu&display=swap");
-
 .main-wrapper {
   position: relative;
   margin: auto;
@@ -28,6 +26,7 @@
 body {
   background-color: #e5e5e5;
   font-family: Poppins, sans-serif, Helvetica, Arial, Verdana, Tahoma;
+ 
 }
 
 .works {
@@ -798,6 +797,7 @@ button:hover {
   padding-top: 6em;
   padding-left: 37px;
   padding-right: 2px;
+  min-width: 358px;
   border-top-right-radius: 50px;
   background-color: white;
   padding-bottom: 80px;
@@ -808,7 +808,7 @@ button:hover {
   color: #344563;
   margin-bottom: 10px;
   padding-bottom: 0%;
-  margin-top: 18px;
+  margin-top: 1px;
   padding-top: 0%;
 }
 
@@ -831,42 +831,9 @@ button:hover {
   margin-bottom: 0;
 }
 
-.parag {
-  align-items: center;
-  width: 80%;
-  position: relative;
-  left: -6px;
-}
-
-.form-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-left: 50px;
-}
-
-.contact-form h2 {
-  justify-self: center;
-  font-size: 40px;
-  color: white;
-  align-self: center;
-  font-weight: 700;
-  margin: 00.0001px;
-}
-
-.mobileIntro h2 {
-  font-size: 20px;
-  width: 100%;
-}
-
-#contact h2 {
-  margin-top: 30px;
-}
-
 .parag p {
   color: #ebebff;
-  margin-bottom: 20px;
+  margin-bottom: 87px;
   margin-top: 12px;
   padding: 4px;
   font-size: 16px;
@@ -955,15 +922,14 @@ button:hover {
 
 .contact-form {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: stretch;
   max-width: 100%;
   border: 1px solid #6070ff;
   padding: 103px 24px 1px 24px;
   border-top-left-radius: 5em;
   font-family: Poppins, sans-serif, Helvetica, Arial, Verdana, Tahoma;
+  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
   background-color: #6070ff;
   background-image: url(images/mobile-footer-img.svg);
   background-repeat: no-repeat;
@@ -977,18 +943,15 @@ button:hover {
   width: 327px;
 }
 
-<<<<<<< HEAD
 .contact-form h2 {
   justify-self: center;
   font-size: 40px;
   color: white;
   align-self: center;
   font-weight: 700;
-  margin-top: 7%;
+  margin-top: 50px;
 }
 
-=======
->>>>>>> 1dfaebd54f188fa5afc3d739a21668513b107908
 .contact-form input {
   height: 50px;
   border-radius: 10px;
@@ -1002,10 +965,18 @@ button:hover {
 
 form .data1 {
   width: 100%;
+  display: grid;
   justify-items: center;
 }
 
+.parag {
+  width: 80%;
+  position: relative;
+  left: -6px;
+}
+
 .contact-form .parag {
+  width: inherit;
   justify-content: center;
   display: flex;
 }
@@ -1218,28 +1189,7 @@ footer {
 }
 
 .mobImag {
-  zoom: 60%;
-  margin-left: 27px;
-}
-
-.imgContainer {
-  display: flex;
-  justify-content: center;
-}
-
-.top-Modal {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.mobileHeading {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #172b4d;
+  zoom: 50%;
 }
 
 .mobileDetail {
@@ -1249,8 +1199,8 @@ footer {
   height: 100%;
   position: fixed;
   top: 0%;
-  left: 2.5%;
-  max-width: 375px;
+  left: 2.8%;
+  max-width: 353px;
   margin: auto;
   right: 20px;
   background-color: white;
@@ -1262,22 +1212,20 @@ footer {
 
 .mobileIntro {
   display: flex;
+  position: relative;
   justify-content: space-between;
   width: 90%;
   padding-top: 20px;
 }
 
-<<<<<<< HEAD
-.mobileIntro h2 {
-  font-size: 20px;
-  width: 100%;
-}
-=======
 /* .mobButtonlist {
   align-items: center;
 } */
 
->>>>>>> 1dfaebd54f188fa5afc3d739a21668513b107908
+.mobileIntro h2 {
+  font-size: 20px;
+  width: 100%;
+}
 
 .mobileFlex {
   display: flex;
@@ -1301,7 +1249,7 @@ footer {
   border-width: 1.5px;
   border-radius: 0%;
   padding: 3px;
-  border-color: #6070ff;
+  border-color: #000;
 }
 
 .mobileButtons {
@@ -1463,7 +1411,7 @@ footer {
     border: 1px solid #dfe1e6;
     border-radius: 20px;
     background-color: white;
-    margin-top: 114px;
+    margin-top: 60px;
     padding-right: 20px;
     align-items: stretch;
     justify-content: stretch;
@@ -1477,14 +1425,14 @@ footer {
   .content-left {
     width: 50%;
     margin-right: auto;
-    padding-left: 50px;
+    padding-left: 30px;
   }
 
   .content-left div {
     margin-top: 0;
   }
 
-  .content-left div h2 {
+  .content-left div h2{
     margin: 0;
   }
 
@@ -1498,6 +1446,11 @@ footer {
     margin: 0%;
     flex-grow: 2;
   }
+
+  /* .image-right .content-left {
+    padding: 0%;
+    margin: 0%;
+  } */
 
   .image-left .content-right {
     padding: 0%;
@@ -1517,7 +1470,7 @@ footer {
     border: 1px solid #dfe1e6;
     border-radius: 20px;
     background-color: white;
-    margin-top: 114px;
+    margin-top: 60px;
     padding-right: 3%;
   }
 
@@ -1696,14 +1649,14 @@ footer {
     height: 25px;
     border-color: #ebebff;
     background-color: #ebebff;
-    border-style: solid;
+    border-style: none;
     margin-right: 10px;
     margin-top: 10px;
     font-weight: 400;
+    border-radius: 10px;
     color: #6070ff;
     padding: 1px 5px;
     margin-bottom: 15px;
-    border-width: 1.5px;
   }
 
   .contact-form button {
@@ -1933,7 +1886,7 @@ footer {
     margin-top: 2px;
   }
 
-  .languages1 li a p {
+  .languages1 li a p{
     display: flex;
     text-align: center;
     padding: 0;
@@ -2005,22 +1958,18 @@ footer {
     color: #ebebff;
     padding-bottom: 15px;
     padding-left: 0%;
-<<<<<<< HEAD
-=======
-
->>>>>>> 1dfaebd54f188fa5afc3d739a21668513b107908
     width: 45%;
     text-align: center;
   }
 
   .data1 input {
     height: 50px;
+    position: relative;
     border-radius: 1px;
     width: 130%;
     border-color: #cfd8dc;
     border-style: none;
     margin-bottom: 20px;
-    left: -20%;
   }
 
   textarea {
@@ -2028,8 +1977,7 @@ footer {
     width: 130%;
     border-style: none;
     margin-bottom: 20px;
-
-    left: -20%;
+    position: relative;
     border-radius: 0.1px;
   }
 

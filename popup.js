@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const liveButton = 'https://kasaija-kenneth.github.io/';
 const codeButton = 'https://github.com/Kasaija-Kenneth/mobile_first_portfolio';
 const portfolio = [
@@ -65,7 +66,7 @@ const projectCards = [
     name2: 'Facebook 360',
     image: 'images/Snapshoot-Portfolio-3.svg',
     image2: 'images/desk3.svg',
-    description: ' Exploring the future of media in Facebooks first Virtual RealityVR.',
+    description: 'Exploring the future of media in Facebooks first Virtual RealityVR.',
     technologies: ['html', 'css', 'javascript'],
     specifics: ['CANOPY', 'Back End Dev', '2015'],
     specifics2: ['FACEBOOK', 'Full Stack Dev', '2015'],
@@ -76,7 +77,7 @@ const projectCards = [
     name2: 'Uber Navigation',
     image: 'images/Snapshoot-Portfolio-4.svg',
     image2: 'images/desk4.svg',
-    description: '  A smart assistant to make driving more safe, efficient, and fun by your car.',
+    description: ' A smart assistant to make driving more safe, efficient, and fun by your car.',
     technologies: ['html', 'css', 'javascript'],
     specifics: ['CANOPY', 'Back End Dev', '2015'],
     specifics2: ['UBER', 'Lead Developer', '2018'],
@@ -85,43 +86,43 @@ const projectCards = [
 
 const portfolioSection = document.getElementById('portfolio');
 portfolioSection.innerHTML = projectCards.map((project, index) => `
-<section class='${index % 2 !== 0 ? 'image-left' : 'image-right'}'>
-  <div class='content-right'>
-    <img class='mobileCard' src='${project.image}' alt='Tonic image' />
-    <img class='desktopCard' src='${project.image2}' alt='Nature image'/>
+<section class="${index % 2 !== 0 ? 'image-left' : 'image-right'}">
+  <div class="content-right">
+    <img class="mobileCard" src="${project.image}" alt="Tonic image" />
+    <img class="desktopCard" src="${project.image2}" alt="Nature image"/>
   </div>
-  <div class='content-left'>
-    <h2 class='mobileheadline'>${project.name}</h2>
-    <div class=''>
-      <h2 class='desktopheadline'>${project.name2}</h2>
-      <div id='profs' >
-        <h3 id='cannopy'>${project.specifics[0]}</h3>
-        <img id='bullet' src='images/desk1.svg' alt=''/>
-        <h3 class='profList'>${project.specifics[1]}</h3>
-        <img  id='bullet2'src='images/desk2.svg' alt=''/>
-        <h3 class='profList'>${project.specifics[2]}</h3>
+  <div class="content-left">
+    <h2 class="mobileheadline">${project.name}</h2>
+    <div class="">
+      <h2 class="desktopheadline">${project.name2}</h2>
+      <div id="profs" >
+        <h3 id="cannopy">${project.specifics[0]}</h3>
+        <img id="bullet" src="images/desk1.svg" alt=""/>
+        <h3 class="profList">${project.specifics[1]}</h3>
+        <img  id="bullet2"src="images/desk2.svg" alt=""/>
+        <h3 class="profList">${project.specifics[2]}</h3>
       </div>
-      <div id='prof2'>
-        <h3  id='cannopy'>${project.specifics2[0]}</h3>
-        <img src='images/desk3.svg' alt='Counter icon'/>
-        <h3 class=''>${project.specifics2[1]}</h3>
-        <img src='images/desk4.svg' alt='Counter icon'/>
-        <h3 class=''>${project.specifics2[2]}</h3>
+      <div id="prof2">
+        <h3  id="cannopy">${project.specifics2[0]}</h3>
+        <img src="images/desk3.svg" alt="Counter icon"/>
+        <h3 class="">${project.specifics2[1]}</h3>
+        <img src="images/desk4.svg" alt="Counter icon"/>
+        <h3 class="">${project.specifics2[2]}</h3>
       </div>
-      <div class='cont'>
-        <p class='tonicm-p'>${project.description}</p>
-        <p class='tonicd-p'>${project.description}</p>
-        <ul class='button'>
+      <div class="cont">
+        <p class="tonicm-p">${project.description}</p>
+        <p class="tonicd-p">${project.description}</p>
+        <ul class="button">
           <li>${project.technologies[0]}</li>
           <li>${project.technologies[1]}</li>
           <li>${project.technologies[2]}</li>
         </ul>
-        <ul class='buttonx1'>
+        <ul class="buttonx1">
             <li>${project.technologies[0]}</li>
           <li>${project.technologies[1]}</li>
           <li>${project.technologies[2]}</li>
         </ul>
-        <button data-modal='.modal' class='hidden33' type='button'>
+        <button data-modal=".modal" class="hidden33" type="button">
           See Project
         </button>
       </div>            
@@ -134,14 +135,16 @@ portfolioSection.innerHTML = projectCards.map((project, index) => `
 /* Desktop popup */
 
 const sectionWrap = document.querySelector('#sectionWrap');
-
+const mobileDetail = document.querySelector('.mobileDetail');
 const desktopDetail = document.querySelector('.desktop');
 const mobileWrap = document.querySelector('#mobileWrap');
 const deskHeading = document.querySelector('.deskHeading');
 const deskList1 = document.querySelector('.deskList1');
 const deskList2 = document.querySelector('.deskList2');
 const deskList3 = document.querySelector('.deskList3');
+const deskList4 = document.querySelector('.deskList4');
 const deskpara = document.querySelector('.deskpara');
+const closeButton = document.querySelector('.closeProj');
 const openButtons = document.querySelectorAll('[data-modal]');
 const languageButtons = document.querySelector('.deskButtonlist');
 const liveLink = document.querySelector('#liveLink');
@@ -167,7 +170,7 @@ function createWindow(index) {
   sourceLink.href = codeButton;
 }
 
-function openWindow() {
+function openWindow(modal) {
   sectionWrap.style.display = 'block';
   mobileWrap.style.display = 'block';
   desktopDetail.style.display = 'block';
@@ -181,6 +184,11 @@ openButtons.forEach((button) => {
   });
 });
 
+function closeall() {
+  mobileWrap.style.display = 'none';
+  sectionWrap.style.display = 'none';
+}
+
 const mobileHeading = document.querySelector('.mobileHeading');
 const mobList1 = document.querySelector('.mobList1');
 const mobList2 = document.querySelector('.mobList2');
@@ -189,6 +197,9 @@ const mobImg = document.querySelector('.mobImag');
 const mobilepara = document.querySelector('.mobilepara');
 const openButtonsMobile = document.querySelectorAll('[data-modal]');
 const languageButtonsMobile = document.querySelector('.mobButtonlist');
+const liveLinkM = document.querySelector('#liveLinkM');
+const sourceLinkM = document.querySelector('#sourceLinkM');
+
 function createWindowMobile(index) {
   languageButtonsMobile.innerHTML = '';
   mobileHeading.innerHTML = portfolio[index].name2;
@@ -212,6 +223,14 @@ const ListItems = {
 mobList1.innerHTML = ListItems.itemA;
 mobList2.innerHTML = ListItems.itemB;
 mobList3.innerHTML = ListItems.itemC;
+
+function openWindowMobile(modal) {
+  modal.classList.add('active');
+  sectionWrap.classList.add('active');
+  sectionWrap.style.display = 'none';
+  mobileWrap.style.display = 'block';
+  desktopDetail.style.display = 'none';
+}
 
 openButtonsMobile.forEach((button) => {
   button.addEventListener('click', () => {
