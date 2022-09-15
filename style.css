@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Poppins&family=Roboto&family=Ubuntu&display=swap');
+
 .main-wrapper {
   position: relative;
   margin: auto;
@@ -26,7 +28,6 @@
 body {
   background-color: #e5e5e5;
   font-family: Poppins, sans-serif, Helvetica, Arial, Verdana, Tahoma;
- 
 }
 
 .works {
@@ -1187,7 +1188,29 @@ footer {
 }
 
 .mobImag {
-  zoom: 50%;
+  zoom: 60%;
+  margin-left: 27px;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.top-Modal {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobileHeading {
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
+
 }
 
 .mobileDetail {
@@ -1197,7 +1220,7 @@ footer {
   height: 100%;
   position: fixed;
   top: 0%;
-  left: 0%;
+  left: 2.5%;
   max-width: 375px;
   margin: auto;
   right: 20px;
@@ -1210,7 +1233,7 @@ footer {
 
 .mobileIntro {
   display: flex;
-  position: relative;
+  
   justify-content: space-between;
   width: 90%;
   padding-top: 20px;
@@ -1430,7 +1453,7 @@ footer {
     margin-top: 0;
   }
 
-  .content-left div h2{
+  .content-left div h2 {
     margin: 0;
   }
 
@@ -1884,7 +1907,7 @@ footer {
     margin-top: 2px;
   }
 
-  .languages1 li a p{
+  .languages1 li a p {
     display: flex;
     text-align: center;
     padding: 0;
