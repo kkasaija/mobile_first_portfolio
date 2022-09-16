@@ -15,7 +15,7 @@ const portfolio = [
     image: 'images/Snapshoot-Portfolio-2.svg',
     name2: 'Multi-Post Stories',
     image2: 'images/desk2.svg',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     technologies: ['html', 'css', 'javascript', 'bootstrap', 'ruby', 'github'],
   },
   {
@@ -23,7 +23,7 @@ const portfolio = [
     name2: 'Tonic',
     image: 'images/Snapshoot-Portfolio-3.svg',
     image2: 'images/desk3.svg',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     technologies: ['html', 'css', 'javascript', 'bootstrap', 'ruby', 'github'],
   },
 
@@ -32,7 +32,16 @@ const portfolio = [
     name2: 'Multi-Post Stories',
     image2: 'images/desk4.svg',
     image: 'images/Snapshoot-Portfolio-4.svg',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+     been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of 
+     type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting
+      industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+       printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of 
+       the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it
+        1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum
+         is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+           it 1960s with the relea`,
     technologies: ['html', 'css', 'javascript', 'bootstrap', 'ruby', 'github'],
   },
 ];
@@ -44,7 +53,7 @@ const projectCards = [
     name2: 'Tonic',
     image: 'images/Snapshoot-Portfolio-1.svg',
     image2: 'images/desk1.svg',
-    description: `ndustry. Lorem printer took a galley of type and scrambled it 1960s with the relea`,
+    description: 'ndustry. Lorem printer took a galley of type and scrambled it 1960s with the relea',
     technologies: ['html', 'css', 'javascript'],
     specifics: ['CANOPY', 'Back End Dev', '2015'],
     specifics2: ['CANOPY', 'Back End Dev', '2015'],
@@ -85,7 +94,7 @@ const projectCards = [
 ];
 
 const portfolioSection = document.getElementById('portfolio');
-portfolioSection.innerHTML = projectCards.map((project, index) => `
+portfolioSection.innerHTML = projectCards.map((project, index) => ` 
 <section class="${index % 2 !== 0 ? 'image-left' : 'image-right'}">
   <div class="content-right">
     <img class="mobileCard" src="${project.image}" alt="Tonic image" />
@@ -118,9 +127,9 @@ portfolioSection.innerHTML = projectCards.map((project, index) => `
           <li>${project.technologies[2]}</li>
         </ul>
         <ul class="buttonx1">
-            <li>${project.technologies[0]}</li>
-          <li>${project.technologies[1]}</li>
-          <li>${project.technologies[2]}</li>
+        <li>${project.technologies[0]}</li>
+        <li>${project.technologies[1]}</li>
+        <li>${project.technologies[2]}</li>
         </ul>
         <button data-modal=".modal" class="hidden33" type="button">
           See Project
