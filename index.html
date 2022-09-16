@@ -19,7 +19,7 @@
             <img id="close-icon" src="images/close-icon.svg" alt="close-icon">
           </a>
           <ul id="mobile-nav-list">
-            <li><a href="#work" class="mobile-nav-item">Portfolio</a></li>
+            <li><a href="#works" class="mobile-nav-item">Portfolio</a></li>
             <li><a href="#about" class="mobile-nav-item">About</a></li>
             <li><a href="#contact" class="mobile-nav-item">Contact</a></li>
           </ul>
@@ -57,114 +57,66 @@
       </div>
       <section id="works">
         <div id="portfolio" class="works"></div>
-
-        <!-- desktop popup starts from Here -->
-
-        <div id="sectionWrap" class="modal">
-          <section class="desktop">
-            <div class="desktopIntro">
-              <h2 class="deskHeading"></h2>
-              <!-- <ul class="deskButtons">
-                <li class="deskList1"></li>
-                <li class="deskList2"></li>
-                <li class="deskList3"></li>
-              </ul> -->
-              
-              <div class="closeProj"><i class="fa fa-times" onclick="closeall()"></i></div>
-            </div>
-            <ul class="deskButtonlist"></ul>
-            <div class="imgContainer"><img src="images/desk1.svg" class="deskImag" alt="project-image"></div>
-            <div class="desktopFlex">
-              <p class="deskpara"></p>
-              <aside>
-                <div class="liner"></div>
-                <div class="separater">
-                  <div class="seeLive">
-                    <a href="" id="liveLink"> see Live <img src="images/live.svg" alt="github pages"> </a>
+          <!-- desktop popup -->
+          <div id="sectionWrap" class="modal">
+            <section class="desktop">
+              <div class="desktopIntro">
+                <h2 class="deskHeading"></h2>
+                <ul class="deskButtons">
+                  <li class="deskList1"></li>
+                  <li class="deskList2"></li>
+                  <li class="deskList3"></li>
+                </ul>
+                <div class="closeProj"><i class="fa fa-times" onclick="closeall()"></i></div>
+              </div>
+              <div><img src="/images/snap3.png" class="deskImag" alt="project-image"></div>
+              <div class="desktopFlex">
+                <p class="deskpara"></p>
+                <aside>
+                  <ul class="deskButtonlist"></ul>
+                  <div class="liner"></div>
+                  <div class="separater">
+                    <div class="seeLive">
+                      <a href="" id="liveLink"> see Live <img src="images/live.svg" alt="github pages"> </a>
+                    </div>
+                    <div class="seeSource">
+                      <a href="" id="sourceLink"> See Source <img src="images/source.svg" alt="github"> </a>
+                    </div>
                   </div>
-                  <div class="seeSource">
-                    <a href="" id="sourceLink"> See Source <img src="images/Github.svg" alt="github"> </a>
-                  </div>
-                </div>
-              </aside>
-            </div>
-          </section>
-        </div>
-        <!-----desktop popup ends here---------->
-
-        <!-- mobile popup starts from here -->
-
-        <div id="mobileWrap" class="modal">
-          <section class="mobileDetail">
-            <div class="mobileIntro">
-              <div class="top-Modal">
-                <div>
-              <h2 class="mobileHeading"></h2>
-                </div>
-              <div class="closeProj"><img src="images/close-icon-popup.png"  onclick="closeall()"></i></div>
-            </div>
-              <ul class="mobileButtons">
-                <li class="mobList1"></li>
-                <li class="mobList2"></li>
-                <li class="mobList3"></li>
-              </ul>
-              
-            </div>
-            <ul class="mobButtonlist"></ul>
-            <div><img src="images/" class="mobImag" alt="project-image"></div>
-            <div class="mobileFlex">
-              <p class="mobilepara"></p>
-              <aside>
-                <div class="linerMobile"></div>
-                <div class="separaterMob">
-                  <div class="seeLiveMob">
-                    <a href="" id="liveLinkM"> see Live <img src="images/live.svg" alt="github pages"> </a>
-                  </div>
-                  <div class="seeSource">
-                    <a href="" id="sourceLinkM"> See Source <img src="images/Github.svg" alt="github"> </a>
-                  </div>
-                </div>
-              </aside>
-            </div>
-          </section>
-        </div>
-        
-        <div class="tonic-desktop">
-          <div class="cont-left">
-            <div class="imagez3">
-              <img src="images/desk1.svg" alt="snap"/>
-            </div>
+                </aside>
+              </div>
+            </section>
           </div>
-          <div class="tonic-content">
-            <h2>Tonic</h2>
-            <div>
-              <ul id="profss">
-                <li id="cannopyy">CANOPY</li>
-                <li>Back End Dev</li>
-                <li>2015</li>
-              </ul>
-            </div>
-            <div>
-              <p>
-                A daily selection of privately personalized: no accounts or
-                sign-ups required
-              </p>
-            </div>
-            <div>
-              <ul class="button">
-                <li><button type="button">html</button></li>
-                <li><button type="button">css</button></li>
-                <li><button type="button">javascript</button></li>
-              </ul>
-            </div>
-            <div class="hidden3">
-              <button type="button">See Project</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!------About section starts from Here------->
+          <!-- mobile popup -->
+          <div id="mobileWrap" class="modal">
+            <section class="mobileDetail">
+              <div class="mobileIntro">
+                <h2 class="mobileHeading"></h2>
+                <ul class="mobileButtons">
+                  <li class="mobList1"></li>
+                  <li class="mobList2"></li>
+                  <li class="mobList3"></li>
+                </ul>
+                <div class="closeProj"><i class="fa fa-times" onclick="closeall()"></i></div>
+              </div>
+              <div><img src="images/" class="mobImag" alt="project-image"></div>
+              <div class="mobileFlex">
+                <p class="mobilepara"></p>
+                <aside>
+                  <ul class="mobButtonlist"></ul>
+                  <div class="linerMobile"></div>
+                  <div class="separaterMob">
+                    <div class="seeLiveMob">
+                      <a href="" id="liveLinkM"> see Live <img src="images/live.svg" alt="github pages"> </a>
+                    </div>
+                    <div class="seeSource">
+                      <a href="" id="sourceLinkM"> See Source <img src="images/source.svg" alt="github"> </a>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </section>
+          </section> 
 
       <section class="abt" id="about">
         <div class="about">

@@ -15,7 +15,7 @@ const portfolio = [
     image: 'images/Snapshoot-Portfolio-2.svg',
     name2: 'Multi-Post Stories',
     image2: 'images/desk2.svg',
-    description: 'Lorem Ipsum is simply dummy text of the printing and',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
     technologies: ['html', 'css', 'javascript', 'bootstrap', 'ruby', 'github'],
   },
   {
@@ -23,7 +23,7 @@ const portfolio = [
     name2: 'Tonic',
     image: 'images/Snapshoot-Portfolio-3.svg',
     image2: 'images/desk3.svg',
-    description: 'Lorem Ipsum is simply dummy text of the printing and',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
     technologies: ['html', 'css', 'javascript', 'bootstrap', 'ruby', 'github'],
   },
 
@@ -32,7 +32,7 @@ const portfolio = [
     name2: 'Multi-Post Stories',
     image2: 'images/desk4.svg',
     image: 'images/Snapshoot-Portfolio-4.svg',
-    description: 'some text some text some text some text',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
     technologies: ['html', 'css', 'javascript', 'bootstrap', 'ruby', 'github'],
   },
 ];
@@ -44,7 +44,7 @@ const projectCards = [
     name2: 'Tonic',
     image: 'images/Snapshoot-Portfolio-1.svg',
     image2: 'images/desk1.svg',
-    description: 'some text some text some text some text',
+    description: `ndustry. Lorem printer took a galley of type and scrambled it 1960s with the relea`,
     technologies: ['html', 'css', 'javascript'],
     specifics: ['CANOPY', 'Back End Dev', '2015'],
     specifics2: ['CANOPY', 'Back End Dev', '2015'],
