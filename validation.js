@@ -1,6 +1,6 @@
-const errorMessage = document.querySelector('#emailErr');
+const errorMessage = document.getElementById('#emailVal');
 const form = document.querySelector('form');
-const email = document.querySelector('#email');
+const email = document.getElementById('#email');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -11,3 +11,4 @@ form.addEventListener('submit', (e) => {
     errorMessage.style.display = 'block';
   }
 });
+
