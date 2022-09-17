@@ -1,3 +1,4 @@
+/* eslint-disable  */
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 const errorMessage = document.getElementById('error');
@@ -9,12 +10,11 @@ form.addEventListener('submit', (e) => {
   } else {
     errorMessage.innerHTML = 'email address must be lower case';
     errorMessage.style.visibility = 'visible';
-    errorMessage.style.color = 'green';
+    errorMessage.style.color = 'yellow';
   }
 });
 
-//local storage code block
-
+//local storage code block. Preserve data
 const inputFields = document.querySelectorAll('input');
 inputFields.forEach((input) => {
   input.addEventListener('change', (event) => {
