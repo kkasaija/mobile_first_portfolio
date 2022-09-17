@@ -31,9 +31,9 @@
               <img id="menu-icon" src="images/menu-icon.svg" alt="menu" />
             </a>
             <ul id="menu-list">
-              <li><a href="">Portfolio</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="#works">Portfolio</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
         </header>
@@ -213,18 +213,21 @@
               love to help with it.
             </p>
           </div>
-          <form action="https://formspree.io/f/mgedkqkj" method="post" autocomplete="off" class="form-block">
+          <form id="form" action="https://formspree.io/f/mgedkqkj" method="post" autocomplete="off" class="form-block">
             <div class="data1">
-              <input name="Name" type="text" placeholder="your Full name" required maxlength="30" />
+              <input id="name" name="name" type="text" placeholder="your Full name" required maxlength="30" />
               <br />
               <input name="email" type="email" id="email" placeholder="your Email e.g example@gmail.com" required />
               <br />
-              <textarea name="Message" class="textarea" cols="30" rows="10" placeholder="input your message here"
+              <textarea id="contact-message" name="Message" class="textarea" cols="30" rows="10" placeholder="input your message here"
                 maxlength="500" required></textarea>
               <br />
             </div>
-            <button type="submit">Get in touch</button>
-            <br />
+            <div id="errorDiv">
+              <p id="error"></p>
+              <button type="submit">Get in touch</button>
+            </div>
+            <br/>
             <div id="mark"></div>
             <br />
           </form>
@@ -233,5 +236,7 @@
     </div>
     <script src="script.js"></script>
     <script src="popup.js"></script>
+    <script src="validation.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>
