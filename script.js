@@ -4,7 +4,7 @@ const hamburgerclose = document.getElementById('close-icon');
 const hamburgeropen = document.getElementById('menu-icon');
 const hamburgerListItem = document.querySelectorAll('.mobile-nav-item');
 function openMenu() {
-  mobileNav.style.visibility = 'visible';
+  mobileNav.style.visibility = "'visible'";
   body.style.overflow = 'hidden';
 }
 function closeMenu() {
