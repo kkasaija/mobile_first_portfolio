@@ -41,7 +41,7 @@ build the first 2 sections of the mobile website using the template you chose in
 
 
 ### Link to online version
-- https://kasaija-kenneth.github.io/
+- https://kasaija-kenneth.github.io/mobile_first_portfolio/
 
 
 ## 🤝 Contributing

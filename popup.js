@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-const liveButton = 'https://kasaija-kenneth.github.io/';
+const liveButton = 'https://kasaija-kenneth.github.io/mobile_first_portfolio/';
 const codeButton = 'https://github.com/Kasaija-Kenneth/mobile_first_portfolio';
 const portfolio = [
   {
